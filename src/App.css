@@ -1,38 +1,85 @@
-.App {
+:root {
+  --primary-color: rgba(232, 223, 202, 1);
+  --secondary-color: rgb(179, 199, 218);
+  --third-color: rgba(7, 109, 225, 0.53);
+  --danger-color: rgba(108, 13, 13, 0.879);
+}
+* {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  width: 100%;
+  height: 70px;
+  background-color: var(--third-color);
+  color: var(--primary-color);
+  padding: 15px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+  min-width: auto;
+  max-width: auto;
+  gap: 15px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex-items {
+  display: flex;
+}
+.flex-items-column {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.form-container {
+  width: 450px;
+  margin: auto;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+.form-container input {
+  margin: 8px;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+  box-shadow: 1px 1px var(--secondary-color);
+}
+.form-container input[type="text"]:focus {
+  border: none;
+  outline: 2px solid var(--secondary-color);
+}
+
+.btn {
+  padding: 5px;
+  margin: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  background-color: var(--third-color);
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 100%;
+  min-width: auto;
+  gap: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.user-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid var(--primary-color);
+  list-style: none;
+  width: 250px;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+  color: var(--third-color);
+  font-weight: 700;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.deleteBtn {
+  color: var(--danger-color);
+  position: absolute;
+  right: 7px;
 }
