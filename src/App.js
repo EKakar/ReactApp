@@ -1,5 +1,5 @@
-import { useState } from "react";
 import Header from "./components/shared/Header/Header";
+import { useState } from "react";
 import "./App.css";
 
 function App() {
@@ -53,7 +53,7 @@ function App() {
 
   return (
     <div className="app flex-items-column">
-      <Header></Header>
+      <Header logotitle="Title" prop="Emirhan" />
       <form action="" className="form-container flex-items-column">
         <label htmlFor="name">Adınız:</label>
         <input

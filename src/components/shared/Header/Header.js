@@ -1,7 +1,9 @@
-function Header() {
+import React from "react";
+
+export const Header= (props)=> {
   return (
     <header>
-      <h3>Adding Student</h3>
+      <h3>{props.logotitle}</h3>
       <div className="navbar">
         <ul>
           <li>
