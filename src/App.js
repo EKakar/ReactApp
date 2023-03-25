@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Header from "./components/shared/Header/Header";
 import "./App.css";
 
 function App() {
@@ -45,14 +46,14 @@ function App() {
   };
 
   const deleteUser = (id) => {
-    setUserList((previousList)=> previousList.filter((user) => user.id !== id));
+    setUserList((previousList) =>
+      previousList.filter((user) => user.id !== id)
+    );
   };
 
   return (
     <div className="app flex-items-column">
-      <header>
-        <h3>Adding Student</h3>
-      </header>
+      <Header></Header>
       <form action="" className="form-container flex-items-column">
         <label htmlFor="name">Adınız:</label>
         <input

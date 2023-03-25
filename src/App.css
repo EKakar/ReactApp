@@ -8,11 +8,29 @@
   text-align: center;
 }
 header {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   height: 70px;
   background-color: var(--third-color);
   color: var(--primary-color);
   padding: 15px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: 15px;
+}
+.navbar ul li {
+  font-weight: 500;
+}
+.navbar ul li a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.navbar ul li:hover {
+  font-weight: 900;
 }
 .app {
   min-width: auto;
